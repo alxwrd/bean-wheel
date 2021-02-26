@@ -1,16 +1,16 @@
 {
-    "name": "foodtime",
+    "name": "bean-wheel",
     "version": "0.0.1",
     "private": true,
     "description": "",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/alxwrd/foodtime.git"
+        "url": "git+https://github.com/alxwrd/bean-wheel.git"
     },
     "author": "Alex Ward (alxwrd@googlemail.com)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/alxwrd/foodtime/issues"
+        "url": "https://github.com/alxwrd/bean-wheel/issues"
     },
     "scripts": {
         "build": "rollup -c",

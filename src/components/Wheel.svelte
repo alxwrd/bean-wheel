@@ -16,7 +16,7 @@
   export let height = "500";
 
   onMount(() => {
-    fetch("https://api.jsonbin.io/b/5e638151763fa966d411d5b2/latest")
+    fetch("https://api.jsonbin.io/b/5fbe65434f12502c21d86700/latest")
       .then(response => {
         return response.json();
       })
@@ -24,9 +24,9 @@
         wheel = new Winwheel({
           canvasId: "wheel",
           pointerAngle: 90,
-          numSegments: 15,
-          innerRadius: 60, // Set inner radius to make wheel hollow.
-          textFontSize: 16, // Set font size accordingly.
+          numSegments: json.segments.length,
+          innerRadius: 100, // Set inner radius to make wheel hollow.
+          textFontSize: 14, // Set font size accordingly.
           textMargin: 0, // Take out default margin.
           // Define segments including colour and text.
           segments: json.segments,
@@ -36,7 +36,7 @@
             duration: 6,
             spins: 5,
             easing: "back.out(0.2)",
-            callbackSound: playSound,
+            // callbackSound: playSound,
             callbackFinished: wheelStopped
           }
         });
